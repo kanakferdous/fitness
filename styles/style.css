@@ -86,6 +86,25 @@ button {
   transition: background-color .3s;
 }
 
+.section-title {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 900;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: .3px;
+  color: rgba(255, 255, 255, 50%);
+  margin-top: 14px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* Header Styles */
 header {
   background-image: linear-gradient(to bottom, rgba(17, 17, 17, 100%), rgba(119, 119, 119, 0%));
@@ -257,4 +276,45 @@ header {
   line-height: 24px;
   letter-spacing: .5px;
   color: rgba(239, 237, 232, 65%);
+}
+
+/* Change Your Habits */
+.change-your-habits {
+  margin: 100px 298px 0px;
+}
+
+.image-with-content {
+  margin-top: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.img-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-content-box .box-img {
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 10%);
+  margin-bottom: 30px;
+}
+
+.img-content-box .box-title {
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.img-content-box .box-content {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: .3px;
+  color: rgba(255, 255, 255, 50%);
 }
