@@ -27,6 +27,26 @@ button {
   cursor: pointer;
 }
 
+table, th, td {
+  border: 1px solid rgba(255, 255, 255, 10%);
+  border-collapse: collapse;
+  padding: 15px 18px;
+  text-align: left;
+}
+
+th {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+td {
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 50%);
+}
+
 /* Shared Style */
 .inter-normal {
   font-family: "Inter", sans-serif;
@@ -282,7 +302,7 @@ header {
 
 /* Change Your Habits */
 .change-your-habits {
-  margin: 100px 298px 0px;
+  margin: 100px 198px 0px;
 }
 
 .image-with-content {
@@ -298,6 +318,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 230px;
 }
 
 .img-content-box .box-img {
@@ -363,4 +384,155 @@ header {
   letter-spacing: .3px;
   color: rgba(255, 255, 255, 50%);
   margin-bottom: 34px;
+}
+
+/* Training and Excercise Section */
+.training {
+  margin: 100px 190px 0px;
+}
+
+.training-boxes {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.training-boxes .box-item {
+  height: 202px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 28px 24px;
+}
+
+.training-boxes .box-item:nth-child(1) {
+  grid-area: 1/1/2/2;
+  display: flex;
+  align-items: flex-end;
+  color: #000000;
+}
+
+.training-boxes .box-item:nth-child(2) {
+  grid-area: 1/2/2/5;
+}
+
+.training-boxes .box-item:nth-child(3) {
+  grid-area: 1/5/2/6;
+  display: flex;
+  align-items: flex-end;
+}
+
+.training-boxes .box-item:nth-child(4) {
+  grid-area: 2/1/3/3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.training-boxes .box-item:nth-child(5) {
+  grid-area: 2/3/3/4;
+  display: flex;
+  align-items: flex-end;
+}
+
+.training-boxes .box-item:nth-child(6) {
+  grid-area: 2/4/3/6;
+  display: flex;
+  align-items: flex-end;
+}
+
+.training-boxes .box-item .box-title {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+  max-width: 176px;
+}
+
+.section-heading {
+  margin: 88px 384.5px;
+}
+
+/* BMI Calculator */
+.bmi-calculator .section-content{
+  background-color: #222222;
+  padding: 49px 189px 52px;
+}
+
+.bmi-calculator-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 44px;
+}
+
+.bmi-calculator-content .title {
+  font-size: 28px;
+  line-height: 120%;
+  font-weight: 900;
+}
+
+.bmi-calculator-content table {
+  margin-top: 52px;
+  width: 100%;
+}
+
+.bmi-form p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: .3px;
+  color: rgba(255, 255, 255, 50%);
+  margin-top: 14px;
+}
+
+.bmi-chart {
+  width: 310px;
+}
+
+.bmi-form {
+  width: 577px;
+}
+
+.bmi-form form {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bmi-form form .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.bmi-form form input, .bmi-form form select {
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 8px;
+  padding: 12px 40px 12px 20px;
+  border: 0px;
+  width: 49%;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 60%);
+}
+
+.bmi-form form input::placeholder {
+  color: rgba(255, 255, 255, 60%);
+}
+
+.bmi-form form select.activity-factor{
+  width: 100%;
+}
+
+.bmi-form form select option {
+  background-color: #222222;
+}
+
+.bmi-form form button {
+  width: fit-content;
+  margin-top: 34px;
 }

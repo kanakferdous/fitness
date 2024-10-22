@@ -108,22 +108,22 @@
       <h2 class="section-title">Train Smarter, Get Stronger</h2>
       <p class="section-subtitle">We believe everyone deserves the opportunity to achieve their fitness goals, no matter where they are or what resources they have.</p>
       <div class="training-boxes">
-        <div class="box-item" style="background-image: url('images/exercise1.jpg');">
+        <div class="box-item" style="background-image: linear-gradient(rgba(6, 255, 210, 50%), rgba(6, 255, 210, 50%)), url('images/exercise1.jpg');">
           <h3 class="box-title">HIIT Workout: Burn Fat Fast</h3>
         </div>
-        <div class="box-item" style="background-image: url('images/exercise2.png');">
+        <div class="box-item" style="background-image: linear-gradient(rgba(255, 0, 0, 30%), rgba(255, 0, 0, 30%)), url('images/exercise2.png');">
           <h3 class="box-title">Strength Training: Build Muscle</h3>
         </div>
-        <div class="box-item" style="background-image: url('images/exercise3.png');">
+        <div class="box-item" style="background-image: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)), url('images/exercise3.png');">
           <h3 class="box-title">Yoga: Flexibility and Mindfulness</h3>
         </div>
-        <div class="box-item" style="background-image: url('images/exercise4.png');">
+        <div class="box-item" style="background-image: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)), url('images/exercise4.png');">
           <h3 class="box-title">Leg Day: Build Lower Body Strength</h3>
         </div>
-        <div class="box-item" style="background-image: url('images/exercise5.jpg');">
+        <div class="box-item" style="background-image: linear-gradient(rgba(66, 255, 0, 30%), rgba(66, 255, 0, 30%)), url('images/exercise5.jpg');">
           <h3 class="box-title">Core Workout: Tone Your Abs</h3>
         </div>
-        <div class="box-item" style="background-image: url('images/exercise6.jpg');">
+        <div class="box-item" style="background-image: linear-gradient(rgba(0, 71, 255, 30%), rgba(0, 71, 255, 30%)), url('images/exercise6.jpg');">
           <h3 class="box-title">Endurance Training: Go the Distance</h3>
         </div>
       </div>
@@ -138,11 +138,10 @@
       <div class="section-content">
         <div class="bmi-calculator-content">
           <div class="bmi-chart">
+            <h3 class="title">BMI Calculator Chart</h3>
             <table>
-              <th>
-                <td>BMI</td>
-                <td>Weight Status</td>
-              </th>
+                <th>BMI</th>
+                <th>Weight Status</th>
               <tr>
                 <td>Below 18.5</td>
                 <td>Underwight</td>
@@ -165,14 +164,18 @@
             <h3 class="title">Calculate your BMI</h3>
             <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             <form action="">
-              <input type="text" name="" id="" placeholder="Height/cm">
-              <input type="text" name="" id="" placeholder="Wight/kg">
-              <input type="number" name="" id="" placeholder="Age">
-              <select name="" id="">
-                <option value="Sex">Sex</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
+              <div class="form-row">
+                <input type="text" name="" id="" placeholder="Height/cm">
+                <input type="text" name="" id="" placeholder="Weight/kg">
+              </div>
+              <div class="form-row">
+                <input type="number" name="" id="" placeholder="Age">
+                <select name="" id="">
+                  <option value="Sex">Sex</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
               <select name="" id="" class="activity-factor">
                 <option value="option-1">Option 1</option>
                 <option value="option-2">Option 2</option>
@@ -181,7 +184,7 @@
               </select>
               <button type="submit" class="primary-btn">Calculate</button>
             </form>
-          </div>
+          </div>          
         </div>
       </div>
     </section>
