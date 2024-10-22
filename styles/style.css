@@ -600,3 +600,77 @@ header {
   color: rgba(255, 255, 255, 50%);
   margin-top: 3px;
 }
+
+footer {
+  background-color: rgba(255, 255, 255, 10%);
+}
+
+.footer-contents {
+  padding: 66px 190px 35px;
+}
+
+.footer-contents .content-boxes{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 102px;
+}
+
+.footer-contents .content-boxes .content-box:nth-child(1) {
+  width: 443px;
+}
+
+.footer-contents .content-boxes .content-box:nth-child(2) {
+  width: 514px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer hr {
+  margin: 79px 0px 36px;
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 10%);
+}
+
+footer .logo {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 120%;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: .3px;
+  color: rgba(255, 255, 255, 50%);
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .3px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 50%);
+  margin-top: 20px;
+}
+
+.footer-menu .menu-title {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 600;
+  margin-bottom: 39px;
+}
+
+.footer-menu ul li {
+  margin-bottom: 20px;
+}
+
+.footer-menu ul li a{
+  font-size: 23px;
+  line-height: 120%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 50%);
+  text-decoration: none;
+}
