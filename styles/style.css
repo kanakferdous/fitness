@@ -60,6 +60,7 @@ button {
   transition: background-color .3s;
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
 }
 
 .primary-btn:hover {
@@ -78,6 +79,7 @@ button {
   transition: background-color .3s;
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
 }
 
 .secondary-btn:hover {
@@ -317,4 +319,48 @@ header {
   font-weight: 400;
   letter-spacing: .3px;
   color: rgba(255, 255, 255, 50%);
+}
+
+.run-extra-mile {
+  margin: 100px 190px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 165px;
+  padding: 30px 32px 30px 54px;
+  background-color: #222222;
+  border-radius: 18px;
+}
+
+.run-extra-mile-content {
+  max-width: 443px;
+}
+
+.run-extra-mile-img {
+  max-width: 336px;
+  height: 312px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.run-extra-mile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.run-extra-mile-content .title {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.run-extra-mile-content .content {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: .3px;
+  color: rgba(255, 255, 255, 50%);
+  margin-bottom: 34px;
 }
