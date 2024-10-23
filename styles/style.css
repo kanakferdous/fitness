@@ -675,6 +675,28 @@ footer .logo {
   text-decoration: none;
 }
 
+.mobile-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hambarger-icon {
+  padding: 0px;
+}
+
+.hambarger-icon hr {
+  margin: 2px 0px;
+}
+
 @media only screen and (max-width: 1440px) {
   .header-wrapper {
     margin: 0px 100px;
@@ -738,5 +760,270 @@ footer .logo {
 
   .footer-contents {
     padding: 66px 30px 35px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    padding: 0px 30px;
+  }
+  
+  header {
+    padding: 52px 0px 111px;
+    margin: 0px -30px;
+  }
+
+  .header-wrapper nav ul {
+    column-gap: 20px;
+  }
+
+  .header-wrapper nav ul li a {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 0px 40px;
+  }
+
+  .banner-contents {
+    width: 100%;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-image {
+    justify-content: center;
+  }
+
+  .bmi-calculator .section-content {
+    margin: 0px -30px;
+    padding-top: 32px;
+    padding-bottom: 36px;
+  }
+
+  footer {
+    margin: 0px -30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .change-your-habits {
+    margin-top: 0px;
+  }
+  .image-with-content {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .img-content-box {
+    width: 45%;
+  }
+
+  .run-extra-mile {
+    margin-top: 84px;
+  }
+
+  .run-extra-mile-content {
+    width: 50%;
+    max-width: inherit;
+  }
+
+  .run-extra-mile-img {
+    width: 50%;
+    max-width: inherit;
+  }
+
+  .run-extra-mile-content .title {
+    font-size: 36px;
+  }
+
+  .training-boxes {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .training-boxes .box-item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .training-boxes .box-item:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 6;
+  }
+  .training-boxes .box-item:nth-child(3) {
+    grid-area: 1 / 6 / 2 / 8;
+  }
+  .training-boxes .box-item:nth-child(4) {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .training-boxes .box-item:nth-child(5) {
+    grid-area: 2 / 4 / 3 / 6;
+  }
+  .training-boxes .box-item:nth-child(6) {
+    grid-area: 2 / 6 / 3 / 8;
+  }
+
+  .training {
+    margin-top: 84px;
+  }
+
+  .section-heading {
+    margin-top: 72px;
+    margin-bottom: 36px;
+  }
+
+  .bmi-calculator-content {
+    flex-direction: column;
+  }
+
+  .bmi-chart {
+    width: 100%;
+  }
+
+  .bmi-form {
+    width: 100%;
+    margin-top: 62px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-wrapper nav ul {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .banner-title {
+    font-size: 36px;
+  }
+
+  header {
+    padding-bottom: 0px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+
+  .img-content-box {
+    width: 100%;
+  }
+
+  .run-extra-mile {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding: 30px;
+  }
+
+  .run-extra-mile-content {
+    width: 100%;
+  }
+
+  .run-extra-mile-img {
+    width: 100%;
+  }
+
+  .run-extra-mile {
+    margin-top: 30px;
+  }
+
+  .training {
+    margin-top: 30px;
+  }
+
+  .training-boxes {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .training-boxes .box-item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .training-boxes .box-item:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .training-boxes .box-item:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .training-boxes .box-item:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  .training-boxes .box-item:nth-child(5) {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .training-boxes .box-item:nth-child(6) {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .section-heading {
+    margin-top: 30px;
+  }
+
+  .meet-our-team {
+    margin-top: 30px;
+  }
+
+  .team-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-contents .content-boxes {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .footer-contents .content-boxes .content-box:nth-child(1) {
+    width: 100%;
+  }
+
+  .footer-contents .content-boxes .content-box:nth-child(2) {
+    width: 100%;
+    column-gap: 30px;
+    justify-content: flex-start;
+  }
+
+  .copyright-text {
+    text-align: left;
+  }
+
+  .banner {
+    padding: 0px;
+  }
+
+  .change-your-habits {
+    margin: 0px;
+  }
+
+  .run-extra-mile {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .training {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .section-heading {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .meet-our-team {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .primary-btn {
+    padding: 16px 20px;
+  }
+  .secondary-btn {
+    padding: 16px 20px;
+  }
+
+  .banner-image .image-info2 {
+    left: 0px;
   }
 }
